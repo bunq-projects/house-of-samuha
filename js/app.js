@@ -878,7 +878,7 @@ const videoCache = new Map(); // Key: src (string), Value: { video: HTMLVideoEle
     roughness: 1.4,
     metalness: 0.5,
     roughnessMap: texLoader.load(
-      "https://cdn.prod.website-files.com/68a844b2b31c9628c316759e/68c2d60a68bb01b690ee98c8_roughness.jpg",
+      new URL("../images/site/68c2d60a68bb01b690ee98c8_roughness.jpg", import.meta.url).href,
       (tex) => {
         console.log("Roughness map texture loaded successfully");
         tex.flipY = false;
@@ -896,7 +896,7 @@ const videoCache = new Map(); // Key: src (string), Value: { video: HTMLVideoEle
   // -----------------------------
   function addLogoTo(plate) {
     const logoSrc =
-      "https://cdn.prod.website-files.com/68a844b2b31c9628c316759e/68c2d60abccb39942d8c6792_logo.png";
+      new URL("../images/site/68c2d60abccb39942d8c6792_logo.png", import.meta.url).href;
     console.log(`Starting to load logo texture: ${logoSrc}`);
     texLoader.load(
       logoSrc,
@@ -928,7 +928,7 @@ const videoCache = new Map(); // Key: src (string), Value: { video: HTMLVideoEle
 
   const loader = new THREE.GLTFLoader();
   const modelUrl =
-    "../assets/plate/plate.glb";
+    new URL("../assets/plate/plate.glb", import.meta.url).href;
   console.log(`Starting to load plate model: ${modelUrl}`);
   loader.load(
     modelUrl,
@@ -1310,7 +1310,7 @@ const videoCache = new Map(); // Key: src (string), Value: { video: HTMLVideoEle
     // Plate model
     new Promise((resolve, reject) => {
       loader.load(
-        "../assets/plate/plate.glb",
+        new URL("../assets/plate/plate.glb", import.meta.url).href,
         () => resolve(),
         undefined,
         () => resolve() // Resolve even on error to avoid blocking
@@ -1319,7 +1319,7 @@ const videoCache = new Map(); // Key: src (string), Value: { video: HTMLVideoEle
     // Logo texture
     new Promise((resolve, reject) => {
       texLoader.load(
-        "https://cdn.prod.website-files.com/68a844b2b31c9628c316759e/68c2d60abccb39942d8c6792_logo.png",
+        new URL("../images/site/68c2d60abccb39942d8c6792_logo.png", import.meta.url).href,
         () => resolve(),
         undefined,
         () => resolve()
@@ -1328,7 +1328,7 @@ const videoCache = new Map(); // Key: src (string), Value: { video: HTMLVideoEle
     // Roughness map
     new Promise((resolve, reject) => {
       texLoader.load(
-        "https://cdn.prod.website-files.com/68a844b2b31c9628c316759e/68c2d60a68bb01b690ee98c8_roughness.jpg",
+        new URL("../images/site/68c2d60a68bb01b690ee98c8_roughness.jpg", import.meta.url).href,
         () => resolve(),
         undefined,
         () => resolve()
