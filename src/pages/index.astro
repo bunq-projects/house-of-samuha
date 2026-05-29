@@ -1,0 +1,213 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+
+const venues = [
+  { id: 'venue-1', buttonId: 'venue-button-1', name: 'Nadar studio', image: '68d251d10f2f643a335c2703_0.jpg' },
+  { id: 'venue-2', buttonId: 'venue-button-2', name: 'Le picnic', image: '68d251d1550b10eafc59d80f_2.jpg' },
+  { id: 'venue-3', buttonId: 'venue-button-3', name: 'Condesa DF', image: '68d251d13f6b6de3cab7bf77_3.jpg' },
+  { id: 'venue-4', buttonId: 'venue-button-4', name: 'MASA Y MUSICA', image: '68d251d131294dd7b5a5b08d_1.jpg' },
+];
+---
+<BaseLayout title="House of Samuha" isHomePage={true} ogImage="https://cdn.prod.website-files.com/68a844b2b31c9628c316759e/68e39665348d05fd0d836eda_OG.jpg">
+  <div id="scrollspace" class="webgl-wrapper">
+    <div id="webgl" class="webgl"></div>
+    <div class="webgl-overlays-wrapper">
+      <div class="overlays chefs">
+        <div class="text-size-medium text-style-allcaps">Chef-First Ethos</div>
+        <div class="text-size-regular">Our ethos prioritizes chefs' creativity, well-being, and leadership. It values their vision, empowers their teams, and fosters innovation, respect, and excellence throughout culinary operations, from kitchen to customer experience.</div>
+      </div>
+      <div class="overlays panes">
+        <div class="text-size-medium text-style-allcaps">Multi-sensory &amp;<br />Cultural Culinary</div>
+        <div class="text-size-regular">Immerse yourself in a dining experience where every bite tells a story—crafted to stir emotion, spark conversation, and connect people through shared flavors, memories, and meaningful, socially conscious moments</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="venues-wrapper" class="venues-section-wrapper">
+    <div class="venues-section">
+      <div class="venues-images-wrapper">
+        <div class="venues-contents-container">
+          <div class="venues-contents-wrapper">
+            <div class="venues-buttons">
+              {venues.map(v => (
+                <div id={v.buttonId} class="button"><div>{v.name}</div></div>
+              ))}
+            </div>
+          </div>
+        </div>
+        {venues.map((v, i) => (
+          <div id={v.id} class:list={['venue-image-wrapper', { active: i === 0 }]}>
+            <img
+              src={`${base}images/site/${v.image}`}
+              loading="lazy"
+              width="672"
+              sizes="(max-width: 767px) 100vw, 672px"
+              srcset={`${base}images/site/${v.image.replace('.jpg', '-p-500.jpg')} 500w, ${base}images/site/${v.image.replace('.jpg', '-p-800.jpg')} 800w, ${base}images/site/${v.image.replace('.jpg', '-p-1080.jpg')} 1080w, ${base}images/site/${v.image} 1344w`}
+              alt={v.name}
+              class="venue-image"
+            />
+          </div>
+        ))}
+      </div>
+      <script is:inline>
+        document.addEventListener('DOMContentLoaded', () => {
+          const section = document.getElementById('venues-wrapper');
+          const images = document.querySelectorAll('#venue-1, #venue-2, #venue-3, #venue-4');
+          const buttons = document.querySelectorAll('#venue-button-1, #venue-button-2, #venue-button-3, #venue-button-4');
+
+          let currentImageIndex = 0;
+          images.forEach((img, i) => {
+            img.style.opacity = i === 0 ? 1 : 0;
+            img.style.zIndex = i === 0 ? 1 : 0;
+            img.style.filter = 'blur(0px)';
+            img.style.willChange = 'opacity, filter';
+          });
+          buttons.forEach((btn, i) => {
+            btn.style.border = i === 0 ? '1px solid #ffffff' : 'none';
+          });
+
+          const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+
+          function sectionScrollProgress() {
+            const start = section.offsetTop;
+            const end = start + section.offsetHeight - window.innerHeight;
+            const y = window.scrollY;
+            if (end <= start) return 0;
+            return clamp((y - start) / (end - start), 0, 1);
+          }
+
+          function indexFromProgress(p) {
+            return Math.min(images.length - 1, Math.floor(p * images.length));
+          }
+
+          function scrollToIndex(index) {
+            const start = section.offsetTop;
+            const span = section.offsetHeight - window.innerHeight;
+            const targetY = start + span * (index / images.length);
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          }
+
+          function animateTransition(fromIndex, toIndex) {
+            if (fromIndex === toIndex) return;
+            images.forEach(img => (img.style.zIndex = 0));
+            images[toIndex].style.zIndex = 1;
+            buttons.forEach((btn, i) => {
+              btn.style.border = i === toIndex ? '1px solid #ffffff' : 'none';
+            });
+            const fromEl = images[fromIndex];
+            const toEl = images[toIndex];
+            fromEl.style.transition = 'filter 1s ease, opacity 2s ease';
+            toEl.style.transition = 'filter 1s ease, opacity 2s ease';
+            fromEl.style.filter = 'blur(64px)';
+            toEl.style.filter = 'blur(64px)';
+            fromEl.style.opacity = 0;
+            toEl.style.opacity = 1;
+            setTimeout(() => {
+              fromEl.style.transition = 'filter 1s ease';
+              toEl.style.transition = 'filter 1s ease';
+              fromEl.style.filter = 'blur(0px)';
+              toEl.style.filter = 'blur(0px)';
+            }, 1000);
+          }
+
+          buttons.forEach((button, index) => {
+            button.addEventListener('click', (e) => {
+              e.preventDefault();
+              scrollToIndex(index);
+            });
+          });
+
+          let ticking = false;
+          function onScroll() {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(() => {
+              const p = sectionScrollProgress();
+              const targetIndex = indexFromProgress(p);
+              if (targetIndex !== currentImageIndex) {
+                animateTransition(currentImageIndex, targetIndex);
+                currentImageIndex = targetIndex;
+              }
+              ticking = false;
+            });
+          }
+
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  window.addEventListener('scroll', onScroll, { passive: true });
+                  const p = sectionScrollProgress();
+                  const targetIndex = indexFromProgress(p);
+                  if (targetIndex !== currentImageIndex) {
+                    animateTransition(currentImageIndex, targetIndex);
+                    currentImageIndex = targetIndex;
+                  }
+                } else {
+                  window.removeEventListener('scroll', onScroll);
+                }
+              });
+            },
+            { root: null, threshold: 0 }
+          );
+          io.observe(section);
+        });
+      </script>
+    </div>
+  </div>
+
+  <div class="webm-wrapper">
+    <div class="w-background-video w-background-video-atom">
+      <video autoplay loop muted playsinline style="background-image:none" data-object-fit="cover">
+        <source src={`${base}videos/6-transcode.mp4`} />
+        <source src={`${base}videos/6-transcode.webm`} />
+      </video>
+    </div>
+  </div>
+
+  <!-- Scroll-driven overlay fade -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      var scrollspace = document.getElementById('scrollspace');
+      var chefsOverlay = document.querySelector('.overlays.chefs');
+      var panesOverlay = document.querySelector('.overlays.panes');
+      if (!scrollspace || !chefsOverlay || !panesOverlay) return;
+
+      function getProgress() {
+        var top = scrollspace.offsetTop;
+        var height = scrollspace.offsetHeight - window.innerHeight;
+        if (height <= 0) return 0;
+        return Math.max(0, Math.min(1, (window.scrollY - top) / height));
+      }
+
+      function fadeRange(p, fadeIn, peakStart, peakEnd, fadeOut) {
+        if (p < fadeIn) return 0;
+        if (p < peakStart) return (p - fadeIn) / (peakStart - fadeIn);
+        if (p < peakEnd) return 1;
+        if (p < fadeOut) return 1 - (p - peakEnd) / (fadeOut - peakEnd);
+        return 0;
+      }
+
+      function update() {
+        var p = getProgress();
+        panesOverlay.style.opacity = fadeRange(p, 0.05, 0.10, 0.20, 0.25);
+        chefsOverlay.style.opacity = fadeRange(p, 0.25, 0.30, 0.40, 0.45);
+      }
+
+      window.addEventListener('scroll', function() {
+        requestAnimationFrame(update);
+      }, { passive: true });
+      update();
+    });
+  </script>
+
+  <!-- Homepage Three.js 3D scene -->
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"></script>
+  <script is:inline src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script is:inline src="https://cdn.jsdelivr.net/npm/lil-gui@0.20.0/dist/lil-gui.umd.min.js"></script>
+  <script is:inline src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script is:inline src="https://cdn.jsdelivr.net/npm/stats.js@0.17.0/build/stats.min.js"></script>
+  <script is:inline type="module" src={`${base}js/app.js`}></script>
+</BaseLayout>

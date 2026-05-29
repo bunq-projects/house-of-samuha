@@ -1,0 +1,26 @@
+{
+  "name": "Chef Rafael Ortega",
+  "slug": "chef-rafael-ortega",
+  "tagline": "The Silent Flame",
+  "bio": "From Lima to Madrid, Rafael cooks with a poet’s patience. His plates often hide a surprise—what looks like a simple ceviche may unfold into smoked broth poured tableside. He values silence, concentration, and intimacy at the table.",
+  "image": "images/content/68cbd8613b20ae3faadb7b2f_9.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd8613b20ae3faadb7b2f_9-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd8613b20ae3faadb7b2f_9-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd8613b20ae3faadb7b2f_9.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "The Silent Flame",
+    "slug": "the-silent-flame"
+  },
+  "eventDescription": "This show unfolds like a whispered story: raw fish with hidden heat, delicate grilled meats with herb oils, and cocoa layers infused with smoke. The atmosphere is dim, candlelit, and punctuated with the chef’s quiet anecdotes."
+}

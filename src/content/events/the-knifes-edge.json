@@ -1,0 +1,62 @@
+{
+  "name": "The Knife’s Edge",
+  "slug": "the-knifes-edge",
+  "date": "November 13, 2025",
+  "description": "The menu balances power and restraint: roasted poultry, root vegetables cut with geometric precision, and a surprise tableside carving ritual. Guests learn the story of competition kitchens and the pursuit of perfection, reimagined as warmth and generosity on the plate.",
+  "chef": {
+    "name": "Chef Bennett Shaw",
+    "slug": "chef-bennett-shaw"
+  },
+  "mainImage": "images/content/68e3932fe0540d39007bee0f_2_1x.webp",
+  "mainImageSrcset": [
+    {
+      "src": "images/content/68e3932fe0540d39007bee0f_2_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e3932fe0540d39007bee0f_2_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e3932fe0540d39007bee0f_2_1x.webp",
+      "width": 1000
+    }
+  ],
+  "chefImage": "images/content/68e38b78bcec2d6e55fb6d7d_2_1x.webp",
+  "chefImageSrcset": [
+    {
+      "src": "images/content/68e38b78bcec2d6e55fb6d7d_2_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e38b78bcec2d6e55fb6d7d_2_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e38b78bcec2d6e55fb6d7d_2_1x.webp",
+      "width": 1000
+    }
+  ],
+  "gallery": [
+    {
+      "url": "images/content/68cc1555ba532f220cdc41fa_4.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc155657e1074a87165b0c_3.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc1555a238c051b9f8871f_2.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc155502f29a2bc324bc97_1.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc1556e3d3599192518f35_0.jpg",
+      "type": "image"
+    }
+  ]
+}

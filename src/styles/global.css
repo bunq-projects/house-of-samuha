@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "./webflow-legacy.css" layer(legacy);
+
+@theme {
+  --font-heading: "Copperplate Gothic", Tahoma, sans-serif;
+  --font-body: "Geist", sans-serif;
+  --color-cream: #cfc8b6;
+}
+
+.faq3_question {
+  cursor: pointer;
+}
+
+.faq3_icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+/* Custom checkbox */
+.w-checkbox-input--inputType-custom {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #fff5;
+  border-radius: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+}
+
+.w-checkbox-input--inputType-custom:checked {
+  background-color: #3898ec;
+  border-color: #3898ec;
+  background-image: url("/house-of-samuha/images/site/custom-checkbox-checkmark.589d534424.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "Copperplate Gothic";
+  src: url("/house-of-samuha/fonts/copperplate-gothic-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

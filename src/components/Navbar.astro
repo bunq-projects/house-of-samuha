@@ -1,0 +1,61 @@
+---
+const base = import.meta.env.BASE_URL;
+const path = Astro.url.pathname;
+
+const links = [
+  { href: `${base}about/`, label: 'About us' },
+  { href: `${base}chefs/`, label: 'Chefs' },
+  { href: `${base}`, label: '', isLogo: true },
+  { href: `${base}shows/`, label: 'Shows' },
+  { href: `${base}reserve/`, label: 'Reserve' },
+];
+
+function isCurrent(href: string) {
+  if (href === base) return path === base || path === base.replace(/\/$/, '');
+  return path.startsWith(href);
+}
+---
+<div data-animation="default" class="navbar1_component w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" role="banner" data-duration="400">
+  <div class="navbar1_container">
+    <div class="container-large">
+      <div class="bl-nav-wrapper">
+        {links.map(link => {
+          if (link.isLogo) {
+            return (
+              <a href={link.href} class="navbar1_link margin-horizontal margin-small w-nav-brand">
+                <img loading="lazy" src={`${base}images/site/68a84adb6166decf1cfcc2ed_logo.svg`} alt="House of Samuha" class="navbar1_logo" />
+              </a>
+            );
+          }
+          return (
+            <a
+              href={link.href}
+              class:list={['navbar1_link', 'hide-tablet', 'text-style-allcaps', 'w-nav-link', { 'w--current': isCurrent(link.href) }]}
+              aria-current={isCurrent(link.href) ? 'page' : undefined}
+            >
+              {link.label}
+            </a>
+          );
+        })}
+      </div>
+      <nav role="navigation" class="navbar1_menu is-page-height-tablet bl-hide w-nav-menu">
+        <div class="navbar1_menu-links margin-left margin-small">
+          <a href={`${base}chefs/`} class="navbar1_link text-style-allcaps w-nav-link">Chefs</a>
+          <a href={`${base}about/`} class="navbar1_link text-style-allcaps w-nav-link">About</a>
+          <a href={`${base}shows/`} class="navbar1_link text-style-allcaps w-nav-link">Shows</a>
+          <a href={`${base}contact/`} class="navbar1_link text-style-allcaps w-nav-link">Contact</a>
+        </div>
+      </nav>
+      <div class="navbar1_menu-button w-nav-button" aria-label="Toggle menu">
+        <div class="menu-icon1">
+          <div class="menu-icon1_line-top"></div>
+          <div class="menu-icon1_line-middle">
+            <div class="menu-icon1_line-middle-inner"></div>
+          </div>
+          <div class="menu-icon1_line-bottom"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar-bg-gradient"></div>
+</div>

@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Reserve | House of Samuha">
+  <section class="section_contact5 margin-vertical margin-xxhuge">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="contact5_content">
+            <div class="margin-bottom margin-medium">
+              <div class="contact5_heading-wrapper">
+                <div class="margin-bottom margin-small">
+                  <h2 class="heading-style-h1 text-style-allcaps">Table for you</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reserve_component">
+            <div class="contact5_form-block w-form">
+              <form id="reserve-form" name="reserve-form" class="reserve_form">
+                <div class="reserve-lhs">
+                  <div class="form_field-wrapper">
+                    <label for="reserve-name" class="form_field-label text-style-allcaps">Name</label>
+                    <input class="form_input-2 w-input" maxlength="256" name="name" placeholder="" type="text" id="reserve-name" required />
+                  </div>
+                  <div class="reserve-lhs-dropdowns">
+                    <div class="form_field-wrapper">
+                      <label class="form_field-label text-style-allcaps">Date</label>
+                      <div class="custom-dropdown" data-name="date">
+                        <div class="dropdown-toggle">
+                          <span class="dropdown-value">Today</span>
+                          <span class="dropdown-chevron"></span>
+                        </div>
+                        <nav class="dropdown-list">
+                          <a href="#" class="dropdown-link" data-value="today">TODAY</a>
+                          <a href="#" class="dropdown-link" data-value="tomorrow">TOMORROW</a>
+                        </nav>
+                        <input type="hidden" name="date" value="today" />
+                      </div>
+                    </div>
+                    <div class="form_field-wrapper">
+                      <label class="form_field-label text-style-allcaps">Time</label>
+                      <div class="custom-dropdown" data-name="time">
+                        <div class="dropdown-toggle">
+                          <span class="dropdown-value">18:00</span>
+                          <span class="dropdown-chevron"></span>
+                        </div>
+                        <nav class="dropdown-list">
+                          <a href="#" class="dropdown-link" data-value="14:00">14:00</a>
+                          <a href="#" class="dropdown-link" data-value="15:00">15:00</a>
+                          <a href="#" class="dropdown-link" data-value="16:00">16:00</a>
+                          <a href="#" class="dropdown-link" data-value="17:00">17:00</a>
+                          <a href="#" class="dropdown-link" data-value="18:00">18:00</a>
+                          <a href="#" class="dropdown-link" data-value="19:00">19:00</a>
+                        </nav>
+                        <input type="hidden" name="time" value="18:00" />
+                      </div>
+                    </div>
+                    <div class="form_field-wrapper">
+                      <label class="form_field-label text-style-allcaps">Guests</label>
+                      <div class="custom-dropdown" data-name="guests">
+                        <div class="dropdown-toggle">
+                          <span class="dropdown-value">2</span>
+                          <span class="dropdown-chevron"></span>
+                        </div>
+                        <nav class="dropdown-list">
+                          <a href="#" class="dropdown-link" data-value="1">1</a>
+                          <a href="#" class="dropdown-link" data-value="2">2</a>
+                          <a href="#" class="dropdown-link" data-value="3">3</a>
+                          <a href="#" class="dropdown-link" data-value="4">4</a>
+                        </nav>
+                        <input type="hidden" name="guests" value="2" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reserve-lhs">
+                  <div class="form_field-wrapper">
+                    <label for="reserve-phone" class="form_field-label text-style-allcaps">Phone Number</label>
+                    <input class="form_input-2 w-input" maxlength="256" name="phone" placeholder="" type="tel" id="reserve-phone" required />
+                  </div>
+                  <div class="reserve-lhs-dropdowns rhs">
+                    <div>
+                      <label class="w-checkbox form_checkbox">
+                        <input type="checkbox" name="terms" required class="w-checkbox-input w-checkbox-input--inputType-custom form_checkbox-icon-2" />
+                        <span class="form_checkbox-label text-size-small w-form-label">I accept the <a href="#" class="text-style-link-2">Terms</a></span>
+                      </label>
+                    </div>
+                    <div class="margin-top margin-xsmall">
+                      <input type="submit" class="bl-button w-button" value="BOOK" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="success-message w-form-done" style="display:none">
+                <div class="success-text">Thank you! Your submission has been received!</div>
+              </div>
+              <div class="error-message w-form-fail" style="display:none">
+                <div class="error-text">Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style is:global>
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .custom-dropdown .dropdown-toggle {
+    border: 1px solid #fff3;
+    background: transparent;
+    color: inherit;
+    padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    user-select: none;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .custom-dropdown .dropdown-chevron {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #fff8;
+    transition: transform 0.2s ease;
+  }
+
+  .custom-dropdown.is-open .dropdown-chevron {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .custom-dropdown .dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    background: #1a1a1a;
+    border: 1px solid #fff2;
+    z-index: 10;
+    flex-direction: column;
+  }
+
+  .custom-dropdown.is-open .dropdown-list {
+    display: flex;
+  }
+
+  .custom-dropdown .dropdown-link {
+    padding: 0.6rem 0.75rem;
+    color: #fff9;
+    text-decoration: none;
+    font-size: inherit;
+    letter-spacing: inherit;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+  }
+
+  .custom-dropdown .dropdown-link:hover {
+    background: #fff1;
+    color: #fff;
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener('astro:page-load', function() {
+    document.querySelectorAll('.custom-dropdown').forEach(function(dropdown) {
+      var toggle = dropdown.querySelector('.dropdown-toggle');
+      var list = dropdown.querySelector('.dropdown-list');
+      var valueEl = dropdown.querySelector('.dropdown-value');
+      var hidden = dropdown.querySelector('input[type="hidden"]');
+
+      toggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        // Close all other dropdowns
+        document.querySelectorAll('.custom-dropdown.is-open').forEach(function(d) {
+          if (d !== dropdown) d.classList.remove('is-open');
+        });
+        dropdown.classList.toggle('is-open');
+      });
+
+      list.querySelectorAll('.dropdown-link').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          valueEl.textContent = this.textContent;
+          hidden.value = this.getAttribute('data-value');
+          dropdown.classList.remove('is-open');
+        });
+      });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function() {
+      document.querySelectorAll('.custom-dropdown.is-open').forEach(function(d) {
+        d.classList.remove('is-open');
+      });
+    });
+  });
+</script>

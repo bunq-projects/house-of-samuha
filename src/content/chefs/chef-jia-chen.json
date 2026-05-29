@@ -1,0 +1,26 @@
+{
+  "name": "Chef Jia Chen",
+  "slug": "chef-jia-chen",
+  "tagline": "Cantonese Roots, Night-Market Energy",
+  "bio": "Raised in Guangzhou’s wet markets, Jia learned to read seasonality by scent. She blends traditional Cantonese technique with a playful fermentation bench, think koji, preserved citrus, and tea-smoke. Don’t miss her crispy duck with kumquat lacquer, served alongside steamed rice-cake “tacos” and pickled long beans. Jia hosts Mahjong Mondays for her team and travels with a suitcase of specialty soy sauces. Her plates feel like neon-lit alleys, fast, fragrant, unforgettable.",
+  "image": "images/content/68cbd5d6a1ab6884c0722405_1.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd5d6a1ab6884c0722405_1-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd5d6a1ab6884c0722405_1-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd5d6a1ab6884c0722405_1.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "Neon Canton",
+    "slug": "neon-canton"
+  },
+  "eventDescription": "Neon Canton is Jia’s love letter to night markets. Steam rises, lacquer shines, and the wok does the talking. Small bowls land fast and playful with crunch, glide, and a quiet hum of tea smoke. You sample a trio of soy ages, fold a warm bite into a soft cake, and listen to street songs that feel like home. It is bright, fun, and full of heartbeat. Jia’s mother ran a late-night stall near the river in Guangzhou.\n‍"
+}

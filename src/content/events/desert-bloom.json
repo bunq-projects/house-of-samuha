@@ -1,0 +1,62 @@
+{
+  "name": "Desert Bloom",
+  "slug": "desert-bloom",
+  "date": "September 30, 2025",
+  "description": "Desert Bloom tells a calm, generous story of the dunes. Date-palm charcoal and dried lime set the tone while saffron warmth ties the room together. You release the scent of loomi between your palms, sip Qahwa, and taste a broth that feels sun-cured and steady. Colors move from sand gold to night rose. It is hospitality first and precision right alongside it. Tariq’s best memories are dawn drives with his uncle, brewing Qahwa and talking about plants that survive without fuss. His mother kept a jar of dried limes on the counter and swore it could fix any soup and most moods. He loves how the desert looks bare until you pay attention. This menu honors that kind of generosity. Menu revealed at the table. Dietary adaptations with 72 hours’ notice.",
+  "chef": {
+    "name": "Chef Tariq Al Mansoori",
+    "slug": "chef-tariq-al-mansoori"
+  },
+  "mainImage": "images/content/68e3eae6f037b0b91645dceb_10_1x.webp",
+  "mainImageSrcset": [
+    {
+      "src": "images/content/68e3eae6f037b0b91645dceb_10_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e3eae6f037b0b91645dceb_10_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e3eae6f037b0b91645dceb_10_1x.webp",
+      "width": 1000
+    }
+  ],
+  "chefImage": "images/content/68e38c1c446f6d6e988944f0_10_1x.webp",
+  "chefImageSrcset": [
+    {
+      "src": "images/content/68e38c1c446f6d6e988944f0_10_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e38c1c446f6d6e988944f0_10_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e38c1c446f6d6e988944f0_10_1x.webp",
+      "width": 1000
+    }
+  ],
+  "gallery": [
+    {
+      "url": "images/content/68cc1141bc7a8a4c43dfbe1c_4.png",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc1140a15164172688d6c9_0.jpeg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc11419aeb08dafa662d8f_1.jpeg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc1140dc5e1ac99bda0e3e_2.jpeg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68dea9fd1e6a4fc842dd172a_a592ad66-63eb-4166-9125-e4522943279a.webp",
+      "type": "image"
+    }
+  ]
+}

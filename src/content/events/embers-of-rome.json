@@ -1,0 +1,62 @@
+{
+  "name": "Embers of Rome",
+  "slug": "embers-of-rome",
+  "date": "September 30, 2025",
+  "description": "Embers of Rome is a combination of fire, patience, and confidence. Olive wood smoke drifts through the room while plates move from assertive heat to gentle silk. You crack fresh pepper at your table, taste olive oils side by side, and see how a few good ingredients can carry a whole evening. The cooking is clean, the seasoning is bold, and the stories are honest. Luca trained as an architect before he wore a chef coat. His grandfather kept a tiny grill on a Trastevere balcony and taught him how time changes flavor. Blueprints gave him discipline and fire taught him restraint. This menu strips things down until what is left feels true. Menu revealed at the table. Dietary adaptations with 72 hours’ notice.",
+  "chef": {
+    "name": "Chef Luca Moretti",
+    "slug": "chef-luca-moretti"
+  },
+  "mainImage": "images/content/68cc118dc6e96f72e1b7f681_0.jpg",
+  "mainImageSrcset": [
+    {
+      "src": "images/content/68cc118dc6e96f72e1b7f681_0-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cc118dc6e96f72e1b7f681_0-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cc118dc6e96f72e1b7f681_0.jpg",
+      "width": 1080
+    }
+  ],
+  "chefImage": "images/content/68e38c0ef34ee8141111ea6b_9_1x.webp",
+  "chefImageSrcset": [
+    {
+      "src": "images/content/68e38c0ef34ee8141111ea6b_9_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e38c0ef34ee8141111ea6b_9_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e38c0ef34ee8141111ea6b_9_1x.webp",
+      "width": 1000
+    }
+  ],
+  "gallery": [
+    {
+      "url": "images/content/68cc118db280206b6551a845_1.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc118dc6e96f72e1b7f681_0.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc118da3d42a161d9551bf_2.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc118ea97c60f96509a58d_3.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68dea9bdf00b24cb8b049915_generated-9-28pm.webp",
+      "type": "image"
+    }
+  ]
+}

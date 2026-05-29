@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Contact | House of Samuha">
+  <section class="section_contact5 margin-vertical margin-xxhuge">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="w-layout-grid contact5_component">
+            <div class="contact5_content">
+              <div class="margin-bottom margin-medium">
+                <div class="contact5_heading-wrapper">
+                  <div class="margin-bottom margin-small">
+                    <h2 class="heading-style-h1 text-style-allcaps">Get in touch</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="contact5_contact-list">
+                <div class="contact5_item">
+                  <div class="text-size-medium text-style-allcaps">Office@samuha.com</div>
+                </div>
+                <div class="contact5_item">
+                  <div class="text-size-medium text-style-allcaps">+91 9807654321</div>
+                </div>
+                <div class="contact5_item">
+                  <div class="text-size-medium text-style-allcaps">
+                    217 Westmoreland Drive<br />Hillside Park, CA 90213<br />United States
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact5_form-block margin-top margin-xxhuge w-form">
+              <form id="contact-form" name="contact-form" class="contact5_form">
+                <div class="form_field-wrapper">
+                  <label for="contact-name" class="form_field-label text-style-allcaps">Name</label>
+                  <input class="form_input-2 w-input" maxlength="256" name="name" placeholder="" type="text" id="contact-name" required />
+                </div>
+                <div class="form_field-wrapper">
+                  <label for="contact-email" class="form_field-label text-style-allcaps">Email</label>
+                  <input class="form_input-2 w-input" maxlength="256" name="email" placeholder="" type="email" id="contact-email" required />
+                </div>
+                <div class="form_field-wrapper">
+                  <label for="contact-message" class="form_field-label text-style-allcaps">Message</label>
+                  <textarea placeholder="Type your message..." maxlength="5000" id="contact-message" name="message" required class="form_input-2 is-text-area w-input"></textarea>
+                </div>
+                <div class="margin-bottom margin-xsmall">
+                  <label class="w-checkbox form_checkbox">
+                    <input type="checkbox" name="terms" required class="w-checkbox-input w-checkbox-input--inputType-custom form_checkbox-icon-2" />
+                    <span class="form_checkbox-label text-size-small w-form-label">I accept the <a href="#" class="text-style-link-2">Terms</a></span>
+                  </label>
+                </div>
+                <input type="submit" class="bl-button w-button" value="Submit" />
+              </form>
+              <div class="success-message w-form-done" style="display:none">
+                <div class="success-text">Thank you! Your submission has been received!</div>
+              </div>
+              <div class="error-message w-form-fail" style="display:none">
+                <div class="error-text">Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

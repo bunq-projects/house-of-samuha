@@ -1,0 +1,34 @@
+---
+const base = import.meta.env.BASE_URL;
+
+interface Props {
+  name: string;
+  slug: string;
+  date: string;
+  mainImage: string;
+  mainImageSrcset: { src: string; width: number }[];
+}
+
+const { name, slug, date, mainImage, mainImageSrcset } = Astro.props;
+const srcset = mainImageSrcset.map(s => `${base}${s.src} ${s.width}w`).join(', ');
+---
+<div role="listitem" class="team10_slide w-dyn-item">
+  <a href={`${base}shows/${slug}/`} class="team10_item w-inline-block">
+    <div class="margin-bottom margin-xsmall">
+      <div class="team10_title-wrapper">
+        <div class="text-size-medium text-style-allcaps">{name}</div>
+        <div class="text-size-small text-style-allcaps bl-alpha-60">{date}</div>
+      </div>
+    </div>
+    <div class="team10_image-wrapper">
+      <img
+        loading="lazy"
+        alt={name}
+        src={`${base}${mainImage}`}
+        srcset={srcset}
+        sizes="100vw"
+        class="team10_image"
+      />
+    </div>
+  </a>
+</div>

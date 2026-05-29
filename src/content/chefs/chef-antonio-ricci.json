@@ -1,0 +1,26 @@
+{
+  "name": "Chef Antonio Ricci",
+  "slug": "chef-antonio-ricci",
+  "tagline": "Golden Hands, Golden Pasta",
+  "bio": "Born in Bologna, Antonio speaks in pasta. His hands roll tagliatelle with the precision of a violinist, and his obsession with regional flour has turned into an artform. Tattoos of swallows on his arms remind him of freedom—his food, however, is all about grounding in tradition.",
+  "image": "images/content/68cbd45ac846b4f282cb75a4_0.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd45ac846b4f282cb75a4_0-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd45ac846b4f282cb75a4_0-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd45ac846b4f282cb75a4_0.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "The Gold of Emilia",
+    "slug": "the-gold-of-emilia"
+  },
+  "eventDescription": "This evening celebrates the sensual simplicity of Emilia-Romagna: ribbons of tagliatelle with ragù, delicate tortellini served in brodo, and pastas kissed by butter and sage. Guests knead dough alongside Antonio before he takes them through a journey of texture, fragrance, and golden wheat memories."
+}

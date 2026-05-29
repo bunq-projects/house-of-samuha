@@ -1,0 +1,58 @@
+{
+  "name": "Neon Canton",
+  "slug": "neon-canton",
+  "date": "September 30, 2025",
+  "description": "Neon Canton is Jia’s love letter to night markets. Steam rises, lacquer shines, and the wok does the talking. Small bowls land fast and playful with crunch, glide, and a quiet hum of tea smoke. You sample a trio of soy ages, fold a warm bite into a soft cake, and listen to street songs that feel like home. It is bright, fun, and full of heartbeat. Jia’s mother ran a late-night stall near the river in Guangzhou. Jia learned to read heat by sound and to balance brightness with calm. She still collects soy sauces from every trip and labels them like family photos. This menu is a bow to market nights, radio music, and the comfort of a warm bowl in your hands. Menu revealed at the table. Dietary adaptations with 72 hours’ notice.",
+  "chef": {
+    "name": "Chef Jia Chen",
+    "slug": "chef-jia-chen"
+  },
+  "mainImage": "images/content/68cc131ca151641726897f7f_0.jpg",
+  "mainImageSrcset": [
+    {
+      "src": "images/content/68cc131ca151641726897f7f_0-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cc131ca151641726897f7f_0.jpg",
+      "width": 800
+    }
+  ],
+  "chefImage": "images/content/68e38be84c60e2add26f1dd4_6_1x.webp",
+  "chefImageSrcset": [
+    {
+      "src": "images/content/68e38be84c60e2add26f1dd4_6_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e38be84c60e2add26f1dd4_6_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e38be84c60e2add26f1dd4_6_1x.webp",
+      "width": 1000
+    }
+  ],
+  "gallery": [
+    {
+      "url": "images/content/68cc131ddfbfa193790fcba6_1.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc131d01c76db83bdc4feb_2.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc131c950e0c31abb711ce_3.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc131d2640576dcd25c4ef_4.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc131ca151641726897f7f_0.jpg",
+      "type": "image"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+---
+interface Props {
+  question: string;
+  answer: string;
+}
+
+const { question, answer } = Astro.props;
+---
+<div class="faq3_accordion">
+  <div class="faq3_question" role="button" tabindex="0" aria-expanded="false">
+    <div class="text-size-medium text-style-allcaps">{question}</div>
+    <div class="faq3_icon-wrapper">
+      <div class="faq-arrow-icon w-embed">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 19 26" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+          <path d="M9.5 26V2M18 10.6023C13.24 10.2746 10.35 5.00399 9.5 2.40964C8.65 5.00399 5.76 10.2746 1 10.6023" stroke="currentColor" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="faq3_answer" style="height: 0px; overflow: hidden; transition: height 0.3s ease;">
+    <div class="margin-bottom margin-small">
+      <p class="text-size-regular">{answer}</p>
+    </div>
+  </div>
+</div>

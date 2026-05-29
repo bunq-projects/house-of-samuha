@@ -1,0 +1,9 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<audio id="backgroundAudio" loop>
+  <source src={`${base}audio/bg-music.mp3`} type="audio/mpeg" />
+</audio>
+<button id="audioToggle" style="position: fixed; z-index: 1010; bottom: 20px; left: 20px; background: transparent; padding: 10px 20px; color: #fff; border: none; border-radius: 5px; cursor: pointer; opacity: 25%;">
+  Sound: On
+</button>

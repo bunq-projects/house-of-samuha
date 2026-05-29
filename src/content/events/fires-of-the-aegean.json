@@ -1,0 +1,78 @@
+{
+  "name": "Fires of the Aegean",
+  "slug": "fires-of-the-aegean",
+  "date": "September 30, 2025",
+  "description": "This evening is a celebration of flame and freshness. Guests begin with shared mezze—dolmades, taramasalata, and grilled halloumi—before moving to fire-roasted seafood, lamb with rosemary smoke, and citrus-laced pastries. Throughout the night, Nikos shares stories of the sea and the vineyards that shaped his youth. The experience feels elemental, like sitting at a village table by the shore, yet heightened into something luxuriously theatrical.",
+  "chef": {
+    "name": "Chef Nikos Demetriou",
+    "slug": "chef-nikos-demetriou"
+  },
+  "mainImage": "images/content/68cc11e146817afd246aea55_0.jpg",
+  "mainImageSrcset": [
+    {
+      "src": "images/content/68cc11e146817afd246aea55_0-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cc11e146817afd246aea55_0-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cc11e146817afd246aea55_0.jpg",
+      "width": 1080
+    }
+  ],
+  "chefImage": "images/content/68e38c0162070af547b74b11_8_1x.webp",
+  "chefImageSrcset": [
+    {
+      "src": "images/content/68e38c0162070af547b74b11_8_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e38c0162070af547b74b11_8_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e38c0162070af547b74b11_8_1x.webp",
+      "width": 1000
+    }
+  ],
+  "gallery": [
+    {
+      "url": "images/content/68cc11e1b1a74689429b0dd6_1.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc11e1f86542c7fc8c2b8a_2.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc11e1d2540b94aa581835_3.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc11e1b280206b6551be27_4.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc11e1f732ee52e8cfd2bf_5.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc11e14314c2d770d418ca_6.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc11e12c260e3e8b744c3a_7.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc11e1e8f1a160132c6e6c_8.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc11e146817afd246aea55_0.jpg",
+      "type": "image"
+    }
+  ]
+}

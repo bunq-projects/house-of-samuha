@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+
+const base = import.meta.env.BASE_URL;
+
+const faqs = [
+  {
+    question: "What exactly is a Samuha evening?",
+    answer: "An intimate, chef-led dining show. You'll share a set, multi-course meal that blends storytelling, music, and a few interactive moments. Think 2.5 to 3 hours, limited seats, a surprise setting, and a menu built around a theme. It feels personal, unhurried, and a little theatrical.",
+  },
+  {
+    question: "Will I know the menu in advance?",
+    answer: "No. The menu is revealed at the table to keep the experience playful. We can accommodate common dietary needs with 72 hours' notice.",
+  },
+  {
+    question: "Can I come alone or with a group?",
+    answer: "Absolutely. Solo guests are very welcome and often seated with like-minded diners. You can book a maximum of 2 seats per booking, and pairs are seated together. If you'd like to bring your close ones or plan something larger, we can arrange a private show – just contact us.",
+  },
+  {
+    question: "Where does the event take place?",
+    answer: "Each show happens at a secret venue in the city. We share the general area when you book and send exact coordinates and access details 24 hours before the event. Some venues are outdoors or in heritage spaces. If you have accessibility needs, tell us in advance so we can prepare the best route and seating.",
+  },
+  {
+    question: "What is the dress code?",
+    answer: "You'll receive the dress code in your invite once your booking is confirmed.",
+  },
+];
+---
+<BaseLayout title="About | House of Samuha">
+  <section class="section_layout10">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="w-layout-grid layout10_component">
+          <div class="layout10_content">
+            <div class="margin-bottom margin-xsmall">
+              <div class="text-size-large">THE ORIGIN</div>
+            </div>
+            <div class="margin-bottom margin-medium">
+              <p class="text-size-regular">
+                Samuha, meaning "gathering" in Sanskrit, was born from a simple belief: dining should be more than eating; it should be a memory. We saw a world where chefs remained hidden behind kitchen walls and diners scrolled through menus that felt identical. Our aha! moment was to reimagine dining as a moving theatre, a nomadic stage where culinary storytellers step into the spotlight.<br /><br />
+                By partnering with independent chefs and transforming underutilised spaces into ephemeral dining stages, we craft immersive, multi-sensory journeys that go beyond food. No two shows are ever the same, but each one leaves behind a lasting connection.
+              </p>
+            </div>
+            <div class="w-layout-grid layout10_item-list">
+              <div class="layout10_item">
+                <div class="margin-bottom margin-xsmall">
+                  <h6 class="text-size-medium">MISSION</h6>
+                </div>
+                <p class="text-size-regular">To represent the hidden qualities of the world's top culinary creators by showcasing their art to the most discerning diners who crave quality.</p>
+              </div>
+              <div class="layout10_item">
+                <div class="margin-bottom margin-xsmall">
+                  <h6 class="text-size-medium">VISION</h6>
+                </div>
+                <p class="text-size-regular">To be the global leader in luxury culinary experiences, built on the principles of artisanship, innovation, and community.</p>
+              </div>
+            </div>
+            <div class="margin-top margin-medium">
+              <div class="button-group">
+                <a href={`${base}shows/`} class="bl-button w-button">EXPLORE SHOWS</a>
+                <a href={`${base}contact/`} class="bl-button w-button">PARTNER WITH US</a>
+              </div>
+            </div>
+          </div>
+          <div class="layout10_image-wrapper">
+            <img
+              src={`${base}images/site/68cc0abfe35850c3a9f861bf_About_Image.jpeg`}
+              loading="lazy"
+              sizes="(max-width: 1080px) 100vw, 1080px"
+              srcset={`${base}images/site/68cc0abfe35850c3a9f861bf_About_Image-p-500.jpeg 500w, ${base}images/site/68cc0abfe35850c3a9f861bf_About_Image-p-800.jpeg 800w, ${base}images/site/68cc0abfe35850c3a9f861bf_About_Image.jpeg 1080w`}
+              alt="About House of Samuha"
+              class="layout10_image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_faq3 margin-vertical margin-xxhuge">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="w-layout-grid faq3_component">
+            <div class="faq3_content">
+              <div class="margin-bottom margin-small">
+                <h2 class="heading-style-h3 text-style-allcaps">Before You Join the Table</h2>
+              </div>
+            </div>
+            <div class="faq3_list margin-top">
+              {faqs.map(faq => (
+                <FAQAccordion question={faq.question} answer={faq.answer} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../scripts/faq-toggle.js"></script>
+</BaseLayout>

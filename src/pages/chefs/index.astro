@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ChefCard from '../../components/ChefCard.astro';
+import { getCollection } from 'astro:content';
+
+const chefs = await getCollection('chefs');
+---
+<BaseLayout title="Chefs | House of Samuha">
+  <section class="section_team8">
+    <div class="padding-global">
+      <div class="chefs-grid-container">
+        <div>
+          <div class="team8_component">
+            <div class="team8_list-wrapper">
+              <div class="w-dyn-list">
+                <div role="list" class="team8_list w-dyn-items">
+                  {chefs.map(chef => (
+                    <ChefCard
+                      name={chef.data.name}
+                      slug={chef.data.slug}
+                      tagline={chef.data.tagline}
+                      image={chef.data.image}
+                      imageSrcset={chef.data.imageSrcset}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,8 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<div class="background-wrapper">
+  <div id="bg-container" class="background"></div>
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"></script>
+  <script is:inline type="module" src={`${base}js/bg-shader.js`}></script>
+</div>

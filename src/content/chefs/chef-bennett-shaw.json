@@ -1,0 +1,26 @@
+{
+  "name": "Chef Bennett Shaw",
+  "slug": "chef-bennett-shaw",
+  "tagline": "Edge of Precision",
+  "bio": "A competitive culinary medalist from Chicago, Bennett brings athlete-like intensity to the kitchen. He carves, sharpens, and plates with quiet focus, every move a practice in discipline. Signature dish? Herb-brined chicken finished with brown-butter jus and hidden herb oils.",
+  "image": "images/content/68cbd745ae3af99f0a452a95_2.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd745ae3af99f0a452a95_2-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd745ae3af99f0a452a95_2-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd745ae3af99f0a452a95_2.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "The Knife’s Edge",
+    "slug": "the-knifes-edge"
+  },
+  "eventDescription": "The menu balances power and restraint: roasted poultry, root vegetables cut with geometric precision, and a surprise tableside carving ritual. Guests learn the story of competition kitchens and the pursuit of perfection, reimagined as warmth and generosity on the plate."
+}

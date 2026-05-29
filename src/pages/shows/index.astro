@@ -1,0 +1,280 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EventCard from '../../components/EventCard.astro';
+import { getCollection } from 'astro:content';
+
+const events = await getCollection('events');
+---
+<BaseLayout title="Shows | House of Samuha">
+  <section class="section_team10">
+    <div class="padding-global">
+      <div class="events-container">
+        <div class="team10_component">
+          <div role="list" class="team10_mask" id="events-slider">
+            {events.map(event => (
+              <EventCard
+                name={event.data.name}
+                slug={event.data.slug}
+                date={event.data.date}
+                mainImage={event.data.mainImage}
+                mainImageSrcset={event.data.mainImageSrcset}
+              />
+            ))}
+          </div>
+          <div class="team10_arrow left" id="slider-prev">
+            <div class="icon-embed-xsmall-2 w-embed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22 16" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+                <path d="M21.8926 8H2.10938M9.20028 1C8.93015 4.92 4.58557 7.3 2.44704 8C4.58557 8.7 8.93015 11.08 9.20028 15" stroke="currentColor" />
+              </svg>
+            </div>
+          </div>
+          <div class="team10_arrow" id="slider-next">
+            <div class="icon-embed-xsmall w-embed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22 16" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+                <path d="M0.107422 8H19.8906M12.7997 1C13.0698 4.92 17.4144 7.3 19.553 8C17.4144 8.7 13.0698 11.08 12.7997 15" stroke="currentColor" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style is:global>
+  .section_team10 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .section_team10 > .padding-global {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 4.5rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+  }
+
+  .section_team10 .events-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .team10_component {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding-bottom: 4rem;
+  }
+
+  .team10_mask {
+    display: flex;
+    overflow: visible;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .team10_mask.is-dragging {
+    cursor: grabbing;
+  }
+
+  .team10_slide {
+    flex: 0 0 30vw;
+    max-width: 30vw;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .team10_item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .team10_image-wrapper {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .team10_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team10_arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .team10_arrow.left {
+    right: 4rem;
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener('astro:page-load', () => {
+    const mask = document.getElementById('events-slider');
+    const prev = document.getElementById('slider-prev');
+    const next = document.getElementById('slider-next');
+    if (!mask) return;
+
+    const component = mask.parentElement;
+    let currentX = 0;
+    let isDragging = false;
+    let startX = 0;
+    let dragStartX = 0;
+    let velocity = 0;
+    let lastX = 0;
+    let lastTime = 0;
+    let animationId = null;
+
+    function getSlideWidth() {
+      const slide = mask.querySelector('.team10_slide');
+      return slide ? slide.offsetWidth : window.innerWidth * 0.3;
+    }
+
+    function getMaxScroll() {
+      return Math.max(0, mask.scrollWidth - component.offsetWidth);
+    }
+
+    function setTranslate(x) {
+      currentX = Math.max(-getMaxScroll(), Math.min(0, x));
+      mask.style.transform = 'translate3d(' + currentX + 'px, 0, 0)';
+    }
+
+    var SLIDES_PER_CLICK = 3;
+
+    if (prev) prev.addEventListener('click', function() {
+      cancelAnimationFrame(animationId);
+      var target = currentX + getSlideWidth() * SLIDES_PER_CLICK;
+      if (target > 0) {
+        // Loop to the end
+        animateTo(-getMaxScroll());
+      } else {
+        animateTo(target);
+      }
+    });
+
+    if (next) next.addEventListener('click', function() {
+      cancelAnimationFrame(animationId);
+      var target = currentX - getSlideWidth() * SLIDES_PER_CLICK;
+      if (target < -getMaxScroll()) {
+        // Loop back to start
+        animateTo(0);
+      } else {
+        animateTo(target);
+      }
+    });
+
+    function animateTo(target) {
+      var start = currentX;
+      var distance = target - start;
+      var duration = 500;
+      var startTime = performance.now();
+
+      function step(time) {
+        var elapsed = time - startTime;
+        var progress = Math.min(elapsed / duration, 1);
+        var ease = 1 - Math.pow(1 - progress, 3);
+        setTranslate(start + distance * ease);
+        if (progress < 1) animationId = requestAnimationFrame(step);
+      }
+      animationId = requestAnimationFrame(step);
+    }
+
+    function momentumScroll() {
+      if (Math.abs(velocity) < 0.5) return;
+      velocity *= 0.95;
+      setTranslate(currentX + velocity);
+      animationId = requestAnimationFrame(momentumScroll);
+    }
+
+    mask.addEventListener('mousedown', function(e) {
+      isDragging = true;
+      startX = e.clientX;
+      dragStartX = currentX;
+      velocity = 0;
+      lastX = e.clientX;
+      lastTime = performance.now();
+      cancelAnimationFrame(animationId);
+      mask.classList.add('is-dragging');
+      e.preventDefault();
+    });
+
+    window.addEventListener('mousemove', function(e) {
+      if (!isDragging) return;
+      var now = performance.now();
+      var dt = now - lastTime;
+      var dx = e.clientX - lastX;
+      if (dt > 0) velocity = dx / dt * 16;
+      lastX = e.clientX;
+      lastTime = now;
+      setTranslate(dragStartX + (e.clientX - startX));
+    });
+
+    window.addEventListener('mouseup', function() {
+      if (!isDragging) return;
+      isDragging = false;
+      mask.classList.remove('is-dragging');
+      animationId = requestAnimationFrame(momentumScroll);
+    });
+
+    mask.addEventListener('touchstart', function(e) {
+      isDragging = true;
+      startX = e.touches[0].clientX;
+      dragStartX = currentX;
+      velocity = 0;
+      lastX = e.touches[0].clientX;
+      lastTime = performance.now();
+      cancelAnimationFrame(animationId);
+    }, { passive: true });
+
+    mask.addEventListener('touchmove', function(e) {
+      if (!isDragging) return;
+      var now = performance.now();
+      var dx = e.touches[0].clientX - lastX;
+      var dt = now - lastTime;
+      if (dt > 0) velocity = dx / dt * 16;
+      lastX = e.touches[0].clientX;
+      lastTime = now;
+      setTranslate(dragStartX + (e.touches[0].clientX - startX));
+    }, { passive: true });
+
+    mask.addEventListener('touchend', function() {
+      isDragging = false;
+      animationId = requestAnimationFrame(momentumScroll);
+    });
+
+    mask.addEventListener('click', function(e) {
+      if (Math.abs(currentX - dragStartX) > 5) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    }, true);
+  });
+</script>

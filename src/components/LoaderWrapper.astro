@@ -1,0 +1,13 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<div id="loader-wrapper" class="loader-wrapper">
+  <div class="loader-logo-wrapper">
+    <div class="loader-logo w-background-video w-background-video-atom">
+      <video id="loader-video" autoplay muted playsinline style="background-image:none" data-object-fit="cover">
+        <source src={`${base}videos/hos-60-fps-1-transcode.mp4`} />
+        <source src={`${base}videos/hos-60-fps-1-transcode.webm`} />
+      </video>
+    </div>
+  </div>
+</div>

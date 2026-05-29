@@ -1,0 +1,26 @@
+{
+  "name": "Chef Sofía Álvarez",
+  "slug": "chef-sofia-alvarez",
+  "tagline": "Masa & Smoke, CDMX → LA",
+  "bio": "Sofía mills her own nixtamal and talks about corn like it’s a family member. She folds Oaxacan memory into LA fire, tetelas stuffed with huitlacoche, slow-smoked squash blossoms, salsa flights that climb in heat and fruit. Her “taste-the-terroir” tortilla course is a quiet showstopper. On days off, she maps the city by taquería and races around on a chili-red bicycle. Sofía cooks joy that’s messy, musical, and perfectly seasoned.",
+  "image": "images/content/68cbd89eb1dd1a70bae6cb0f_10.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd89eb1dd1a70bae6cb0f_10-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd89eb1dd1a70bae6cb0f_10-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd89eb1dd1a70bae6cb0f_10.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "Masa y Música",
+    "slug": "masa-y-musica"
+  },
+  "eventDescription": "At Masa y Música the heartbeat is masa. Sofía mills, presses, and griddles while a vinyl set drifts from slow love songs to easy city beats. Smoke kisses flowers and greens and a salsa flight climbs from bright to deep. You press a warm fold yourself, sip something cool with lime, and hear simple stories about corn and family. It feels joyful and close.\n \nSofía learned nixtamal from her abuela on Sundays and carried that rhythm to Los Angeles. She keeps a crate of records in the kitchen because certain songs help the masa relax. Street vendors in both cities feel like home. This menu is about corn as memory, movement, and comfort. Menu revealed at the table. Dietary adaptations with 72 hours’ notice."
+}

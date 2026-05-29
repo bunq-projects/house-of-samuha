@@ -1,0 +1,26 @@
+{
+  "name": "Chef Oliver Hart",
+  "slug": "chef-oliver-hart",
+  "tagline": "Coastal Britain, Ferment & Forage",
+  "bio": "Raised on the Cornish coast, Oliver chases tides and seasons with calm, clever cooking. He cures, brines, and ferments like a patient scientist, then keeps the plating relaxed and inviting. Signature: smoked mackerel on a warm crumpet with seaweed butter and nettle verde. He carves his own spoons, swims year-round, and names his sourdough starters after storm systems. Oliver’s shows feel like a seaside afternoon that never quite ends.",
+  "image": "images/content/68cbd7e6dbd0700a0d42ea7a_6.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd7e6dbd0700a0d42ea7a_6-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd7e6dbd0700a0d42ea7a_6-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd7e6dbd0700a0d42ea7a_6.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "Tide & Time",
+    "slug": "tide-time"
+  },
+  "eventDescription": "Tide & Time is coastal Britain with the volume turned down and the flavor turned up. Brines, cures, and gentle ferments sit under everything, clean and steady. Sea greens meet warm crumb and a touch of smoke. You taste a spoon of something ocean bright, break fresh bread, and hear why the calendar is Oliver’s sous-chef. It is unfussy, precise, and very comforting."
+}

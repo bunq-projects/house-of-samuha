@@ -1,0 +1,62 @@
+{
+  "name": "Masa y Música",
+  "slug": "masa-y-musica",
+  "date": "September 30, 2025",
+  "description": "At Masa y Música the heartbeat is masa. Sofía mills, presses, and griddles while a vinyl set drifts from slow love songs to easy city beats. Smoke kisses flowers and greens and a salsa flight climbs from bright to deep. You press a warm fold yourself, sip something cool with lime, and hear simple stories about corn and family. It feels joyful and close. Sofía learned nixtamal from her abuela on Sundays and carried that rhythm to Los Angeles. She keeps a crate of records in the kitchen because certain songs help the masa relax. Street vendors in both cities feel like home. This menu is about corn as memory, movement, and comfort.",
+  "chef": {
+    "name": "Chef Sofía Álvarez",
+    "slug": "chef-sofia-alvarez"
+  },
+  "mainImage": "images/content/68cc1226b4b6ecf775cdb0ef_0.jpg",
+  "mainImageSrcset": [
+    {
+      "src": "images/content/68cc1226b4b6ecf775cdb0ef_0-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cc1226b4b6ecf775cdb0ef_0-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cc1226b4b6ecf775cdb0ef_0.jpg",
+      "width": 1080
+    }
+  ],
+  "chefImage": "images/content/68e38bf55af57ba34a3bdfcc_7_1x.webp",
+  "chefImageSrcset": [
+    {
+      "src": "images/content/68e38bf55af57ba34a3bdfcc_7_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e38bf55af57ba34a3bdfcc_7_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e38bf55af57ba34a3bdfcc_7_1x.webp",
+      "width": 1000
+    }
+  ],
+  "gallery": [
+    {
+      "url": "images/content/68cc1226d647cbe3c87449b3_1.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc1226d3eb799647d5bc91_2.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc1226b4b6ecf775cdb0ef_0.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68dea95f2efa4ca1ab0254cb_generated-9-23pm.webp",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68dea95f0837b1a660440183_generated-9-17pm.webp",
+      "type": "image"
+    }
+  ]
+}

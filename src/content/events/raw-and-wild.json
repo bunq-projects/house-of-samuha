@@ -1,0 +1,62 @@
+{
+  "name": "Raw And Wild",
+  "slug": "raw-and-wild",
+  "date": "September 22, 2025",
+  "description": "Expect green abundance: crisp Romanesco with anchovy crumble, lemon-zested salads, and pastas crowned with wild herbs. The show feels like stepping into a cliffside garden, full of salt air, citrus brightness, and exuberant laughter.",
+  "chef": {
+    "name": "Chef Marco De Santis",
+    "slug": "chef-marco-de-santis"
+  },
+  "mainImage": "images/content/68cc134e3452528c1d9df5f1_vineyard-reception.jpg",
+  "mainImageSrcset": [
+    {
+      "src": "images/content/68cc134e3452528c1d9df5f1_vineyard-reception-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cc134e3452528c1d9df5f1_vineyard-reception-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cc134e3452528c1d9df5f1_vineyard-reception.jpg",
+      "width": 1080
+    }
+  ],
+  "chefImage": "images/content/68e38bd65a7a3a55458daa90_5_1x.webp",
+  "chefImageSrcset": [
+    {
+      "src": "images/content/68e38bd65a7a3a55458daa90_5_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e38bd65a7a3a55458daa90_5_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e38bd65a7a3a55458daa90_5_1x.webp",
+      "width": 1000
+    }
+  ],
+  "gallery": [
+    {
+      "url": "images/content/68cc1363f785f4da62a17be4_2.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc13635c358361895aeda0_3.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc13632640576dcd25dff6_1.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc134e3452528c1d9df5f1_vineyard-reception.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68dea8e2fc588678ba26ce1c_generated-8-55pm.webp",
+      "type": "image"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Chef Malik Johnson",
+  "slug": "chef-malik-johnson",
+  "tagline": "Smoke & Soul",
+  "bio": "Raised in New Orleans, Malik grew up with the rhythm of jazz and the scent of live fire in every backyard. His food is bold yet soulful, honoring roots while pushing into modern textures. Signature? Slow-smoked ribs lacquered with sorghum glaze, paired with fire-kissed okra and cornbread ash. Malik’s shows feel like stepping into a warm jam session: smoky, rhythmic, alive.",
+  "image": "images/content/68cbd74e1d707fbd24076f06_3.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd74e1d707fbd24076f06_3-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd74e1d707fbd24076f06_3-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd74e1d707fbd24076f06_3.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "Smoke & Soul",
+    "slug": "smoke-soul"
+  },
+  "eventDescription": "Malik’s evening moves like music, intense riffs of heat, mellow pauses of smoke, and surprising improvisations on the plate. You’ll taste brisket carved table-side, hushpuppies fresh from the fire, and a finale of charred peach bourbon cake. Stories weave through every course, connecting fire, memory, and rhythm."
+}

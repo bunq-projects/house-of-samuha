@@ -1,0 +1,62 @@
+{
+  "name": "Smoke & Soul",
+  "slug": "smoke-soul",
+  "date": "October 16, 2025",
+  "description": "Malik’s evening moves like music, intense riffs of heat, mellow pauses of smoke, and surprising improvisations on the plate. You’ll taste brisket carved table-side, hushpuppies fresh from the fire, and a finale of charred peach bourbon cake. Stories weave through every course, connecting fire, memory, and rhythm.",
+  "chef": {
+    "name": "Chef Malik Johnson",
+    "slug": "chef-malik-johnson"
+  },
+  "mainImage": "images/content/68cc13b2f4b6bce09db97aba_0.jpg",
+  "mainImageSrcset": [
+    {
+      "src": "images/content/68cc13b2f4b6bce09db97aba_0-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cc13b2f4b6bce09db97aba_0-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cc13b2f4b6bce09db97aba_0.jpg",
+      "width": 1080
+    }
+  ],
+  "chefImage": "images/content/68e38bc898f1c5f8d17491ba_4_1x.webp",
+  "chefImageSrcset": [
+    {
+      "src": "images/content/68e38bc898f1c5f8d17491ba_4_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e38bc898f1c5f8d17491ba_4_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e38bc898f1c5f8d17491ba_4_1x.webp",
+      "width": 1000
+    }
+  ],
+  "gallery": [
+    {
+      "url": "images/content/68cc13b2a97d21ae2f0a4c9c_4.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc13b2f4b6bce09db97aba_0.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc1425d651649749e58df6_1.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc1425823815650e02d676_3.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc1425591501b4fddce986_2.jpg",
+      "type": "image"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Chef Luca Moretti",
+  "slug": "chef-luca-moretti",
+  "tagline": "Roman Classics, Live Fire",
+  "bio": "An architect-turned-chef from Trastevere, Luca cooks like he still drafts blueprints: clean lines, strong structure, zero fluff. He’s obsessed with bronze-die pasta, cracked pepper science, and the perfume of olive-wood embers. Signature? Cacio e pepe agnolotti finished over the grill with charred lemon and pecorino foam. He collects vintage pasta tools and DJs Italo-disco at prep. Luca’s shows are loud, laughing, and unapologetically saucy.",
+  "image": "images/content/68cbd83820d539435c7fd388_8.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd83820d539435c7fd388_8-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd83820d539435c7fd388_8-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd83820d539435c7fd388_8.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "Embers of Rome",
+    "slug": "embers-of-rome"
+  },
+  "eventDescription": "Embers of Rome is a combination of fire, patience, and confidence. Olive wood smoke drifts through the room while plates move from assertive heat to gentle silk. You crack fresh pepper at your table, taste olive oils side by side, and see how a few good ingredients can carry a whole evening. The cooking is clean, the seasoning is bold, and the stories are honest. Luca trained as an architect before he wore a chef coat.\n‍"
+}

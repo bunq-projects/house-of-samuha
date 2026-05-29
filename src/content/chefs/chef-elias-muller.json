@@ -1,0 +1,26 @@
+{
+  "name": "Chef Elias Müller",
+  "slug": "chef-elias-muller",
+  "tagline": "The Alchemy of Comfort",
+  "bio": "A Berlin native who studied philosophy before turning to food, Elias cooks to ask questions, not answer them. He plays with textures of warmth: melted cheese, smoked potatoes, broths that linger. He peppers his dinners with small riddles for guests to solve between courses.",
+  "image": "images/content/68cbd8c57cbadb95a3e4bda3_11.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd8c57cbadb95a3e4bda3_11-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd8c57cbadb95a3e4bda3_11-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd8c57cbadb95a3e4bda3_11.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "Alchemy of Comfort",
+    "slug": "alchemy-of-comfort"
+  },
+  "eventDescription": "Diners move through a progression of comforting dishes made strange: truffled dumplings under hay smoke, bitter-sweet stews, and a dessert of chocolate ashes and milk snow. The evening ends with Elias sharing a question, not a speech: “What is comfort to you?”"
+}

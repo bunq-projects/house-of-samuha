@@ -1,0 +1,58 @@
+{
+  "name": "Alchemy of Comfort",
+  "slug": "alchemy-of-comfort",
+  "date": "September 30, 2025",
+  "description": "Diners move through a progression of comforting dishes made strange: truffled dumplings under hay smoke, bitter-sweet stews, and a dessert of chocolate ashes and milk snow. The evening ends with Elias sharing a question, not a speech: “What is comfort to you?”",
+  "chef": {
+    "name": "Chef Elias Müller",
+    "slug": "chef-elias-muller"
+  },
+  "mainImage": "images/content/68cc046f152593b83ab790e3_0.jpg",
+  "mainImageSrcset": [
+    {
+      "src": "images/content/68cc046f152593b83ab790e3_0-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cc046f152593b83ab790e3_0.jpg",
+      "width": 800
+    }
+  ],
+  "chefImage": "images/content/68e38c286a8e1e902dc245e7_11_1x.webp",
+  "chefImageSrcset": [
+    {
+      "src": "images/content/68e38c286a8e1e902dc245e7_11_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e38c286a8e1e902dc245e7_11_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e38c286a8e1e902dc245e7_11_1x.webp",
+      "width": 1000
+    }
+  ],
+  "gallery": [
+    {
+      "url": "images/content/68cc046f152593b83ab790e3_0.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc046f1f3681734ff3ee3f_1.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc046fe0572687e1ceba8e_2.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68deaa416aab18b564d01fc9_generated-9-02pm.webp",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68deaa412a01232b78b62af7_generated-9-03pm.webp",
+      "type": "image"
+    }
+  ]
+}

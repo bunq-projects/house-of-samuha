@@ -1,0 +1,66 @@
+{
+  "name": "The Silent Flame",
+  "slug": "the-silent-flame",
+  "date": "December 26, 2025",
+  "description": "This show unfolds like a whispered story: raw fish with hidden heat, delicate grilled meats with herb oils, and cocoa layers infused with smoke. The atmosphere is dim, candlelit, and punctuated with the chef’s quiet anecdotes.",
+  "chef": {
+    "name": "Chef Rafael Ortega",
+    "slug": "chef-rafael-ortega"
+  },
+  "mainImage": "images/content/68cc15a80d1be52b77541336_0.jpg",
+  "mainImageSrcset": [
+    {
+      "src": "images/content/68cc15a80d1be52b77541336_0-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cc15a80d1be52b77541336_0-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cc15a80d1be52b77541336_0.jpg",
+      "width": 1080
+    }
+  ],
+  "chefImage": "images/content/68e38b68d23e7c312bbc3a13_1_1x.webp",
+  "chefImageSrcset": [
+    {
+      "src": "images/content/68e38b68d23e7c312bbc3a13_1_1x-p-500.webp",
+      "width": 500
+    },
+    {
+      "src": "images/content/68e38b68d23e7c312bbc3a13_1_1x-p-800.webp",
+      "width": 800
+    },
+    {
+      "src": "images/content/68e38b68d23e7c312bbc3a13_1_1x.webp",
+      "width": 1000
+    }
+  ],
+  "gallery": [
+    {
+      "url": "images/content/68cc15adb92754a4e6d0d011_5.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc15ad2a4ab88da0895a5e_4.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc15adf421993713161cf5_3.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc15ad42ed41cb5703e9c4_2.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc15ad6f75274a8ef692e2_1.jpg",
+      "type": "image"
+    },
+    {
+      "url": "images/content/68cc15a80d1be52b77541336_0.jpg",
+      "type": "image"
+    }
+  ]
+}

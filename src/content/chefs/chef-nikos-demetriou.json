@@ -1,0 +1,26 @@
+{
+  "name": "Chef Nikos Demetriou",
+  "slug": "chef-nikos-demetriou",
+  "tagline": "Fires of the Aegean",
+  "bio": "Raised in Thessaloniki and trained in both Athens and Marseille, Nikos carries the dual heritage of Greek tradition and French refinement. He cooks with bold simplicity: charred octopus, lemon-drizzled fish, and oregano rubbed straight from the hillside. His food is earthy and honest, but always plated with quiet elegance. His signature dish is whole sea bream wrapped in grape leaves and roasted over embers.",
+  "image": "images/content/68cbd76bfbee380cfd300454_5.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd76bfbee380cfd300454_5-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd76bfbee380cfd300454_5-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd76bfbee380cfd300454_5.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "Fires of the Aegean",
+    "slug": "fires-of-the-aegean"
+  },
+  "eventDescription": "This evening is a celebration of flame and freshness. Guests begin with shared mezze—dolmades, taramasalata, and grilled halloumi—before moving to fire-roasted seafood, lamb with rosemary smoke, and citrus-laced pastries. Throughout the night, Nikos shares stories of the sea and the vineyards that shaped his youth. The experience feels elemental, like sitting at a village table by the shore, yet heightened into something luxuriously theatrical."
+}

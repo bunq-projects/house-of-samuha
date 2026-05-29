@@ -1,0 +1,26 @@
+{
+  "name": "Chef Tariq Al Mansoori",
+  "slug": "chef-tariq-al-mansoori",
+  "tagline": "New Emirati, Desert to Table",
+  "bio": "Tariq forages desert botanicals and reimagines Gulf flavors with modern precision. Date syrup becomes a glossy gastrique; dried limes star in umami broths; saffron rice shows up as bite-sized arancini with ouzi lamb filling. He roasts over date-palm charcoal and serves Arabic Qahwa like a ritual. Sunrise dune drives reset his menu brainstorms, and yes, his spice tins are labeled in Arabic calligraphy. Tariq’s dinners are warm, generous, and deeply rooted.",
+  "image": "images/content/68cbd8283cb79120c5982c9f_7.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd8283cb79120c5982c9f_7-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd8283cb79120c5982c9f_7-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd8283cb79120c5982c9f_7.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "Desert Bloom",
+    "slug": "desert-bloom"
+  },
+  "eventDescription": "Desert Bloom tells a calm, generous story of the dunes. Date-palm charcoal and dried lime set the tone while saffron warmth ties the room together. You release the scent of loomi between your palms, sip Qahwa, and taste a broth that feels sun-cured and steady. Colors move from sand gold to night rose. It is hospitality first and precision right alongside it."
+}

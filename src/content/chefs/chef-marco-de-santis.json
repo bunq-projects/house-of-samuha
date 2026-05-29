@@ -1,0 +1,26 @@
+{
+  "name": "Chef Marco De Santis",
+  "slug": "chef-marco-de-santis",
+  "tagline": "Raw & Wild",
+  "bio": "Raised on the Amalfi coast, Marco is restless, impulsive, and alive. He forages wild herbs, shaves lemon zest like confetti, and layers greens until plates look like chaotic gardens. His hands move fast, his laugh even faster.",
+  "image": "images/content/68cbd7617549b2082b3c6192_4.jpg",
+  "imageSrcset": [
+    {
+      "src": "images/content/68cbd7617549b2082b3c6192_4-p-500.jpg",
+      "width": 500
+    },
+    {
+      "src": "images/content/68cbd7617549b2082b3c6192_4-p-800.jpg",
+      "width": 800
+    },
+    {
+      "src": "images/content/68cbd7617549b2082b3c6192_4.jpg",
+      "width": 1080
+    }
+  ],
+  "upcomingEvent": {
+    "name": "",
+    "slug": ""
+  },
+  "eventDescription": "Expect green abundance: crisp Romanesco with anchovy crumble, lemon-zested salads, and pastas crowned with wild herbs. The show feels like stepping into a cliffside garden, full of salt air, citrus brightness, and exuberant laughter."
+}

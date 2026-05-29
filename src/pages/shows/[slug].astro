@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const events = await getCollection('events');
+  return events.map(event => ({
+    params: { slug: event.data.slug },
+    props: { event: event.data },
+  }));
+}
+
+const base = import.meta.env.BASE_URL;
+const { event } = Astro.props;
+const srcset = event.mainImageSrcset.map(s => `${base}${s.src} ${s.width}w`).join(', ');
+const chefSrcset = event.chefImageSrcset?.map(s => `${base}${s.src} ${s.width}w`).join(', ') || '';
+---
+<BaseLayout title={`${event.name} | House of Samuha`}>
+  <header class="section_product-header4 margin-vertical margin-xhuge">
+    <div class="padding-global">
+      <div class="container-medium">
+        <div class="padding-section-medium">
+          <div class="product-header4_component">
+            <div class="w-layout-grid product-header4_layout">
+              <div class="product-header4_gallery">
+                <div class="product-header3_gallery">
+                  <div class="product-header3_main-image-wrapper">
+                    <img
+                      src={`${base}${event.mainImage}`}
+                      loading="lazy"
+                      alt={event.name}
+                      sizes="100vw"
+                      srcset={srcset}
+                      class="product-header3_main-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="events-details-rhs">
+                <div>
+                  <div class="margin-bottom margin-small">
+                    <h1 class="heading-style-h2 text-style-allcaps">{event.name}</h1>
+                  </div>
+                  <div class="margin-bottom margin-small">
+                    <div class="product-header4_price-wrapper">
+                      <div class="product-header4_reviews-wrapper">
+                        <div class="text-size-small-2 text-style-allcaps">{event.date}</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="margin-bottom margin-small">
+                    <p class="text-size-regular">{event.description}</p>
+                  </div>
+                  <div class="margin-bottom margin-small">
+                    <a href={`${base}chefs/${event.chef.slug}/`}>{event.chef.name}</a>
+                  </div>
+                  <div class="margin-bottom margin-small">
+                    <a href={`${base}reserve/`} class="bl-button w-button">Reserve Your Spot</a>
+                  </div>
+                </div>
+                {event.chefImage && (
+                  <div>
+                    <img
+                      src={`${base}${event.chefImage}`}
+                      loading="lazy"
+                      alt={event.chef.name}
+                      sizes="100vw"
+                      srcset={chefSrcset}
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</BaseLayout>
