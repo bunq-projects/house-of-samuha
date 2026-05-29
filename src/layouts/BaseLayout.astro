@@ -41,23 +41,30 @@ const { title, description, ogImage, isHomePage = false } = Astro.props;
     </div>
   </div>
 
-  {!isHomePage && <BackgroundShader />}
+  <div transition:persist="bg-shader" class:list={["bg-persist", { "bg-hidden": isHomePage }]}>
+    <BackgroundShader />
+  </div>
 
   <LoaderWrapper />
 
   <div class="page-wrapper">
     <main class="main-wrapper">
-      <Navbar />
+      <div transition:persist="navbar">
+        <Navbar />
+      </div>
       <slot />
       <Footer />
     </main>
   </div>
 
-  <AudioToggle />
+  <div transition:persist="audio">
+    <AudioToggle />
+  </div>
 
   <script is:inline src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
   <script src="../scripts/lenis-init.js"></script>
   <script src="../scripts/nav-toggle.js"></script>
+  <script src="../scripts/nav-active.js"></script>
   <script src="../scripts/loader.js"></script>
   <script src="../scripts/audio-player.js"></script>
 </body>

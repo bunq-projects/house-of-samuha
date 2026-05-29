@@ -2043,7 +2043,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Copperplate Gothic;
-  src: url("/house-of-samuha/fonts/copperplate-gothic-light.ttf") format("truetype");
+  src: url("/fonts/copperplate-gothic-light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -2145,7 +2145,7 @@ textarea.w-input, textarea.w-select {
 
 .w-checkbox-input--inputType-custom.w--redirected-checked {
   background-color: #3898ec;
-  background-image: url("/house-of-samuha/images/site/custom-checkbox-checkmark.589d534424.svg");
+  background-image: url("/images/site/custom-checkbox-checkmark.589d534424.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2975,14 +2975,14 @@ figcaption {
 }
 
 .form_input.is-select-input {
-  background-image: url("/house-of-samuha/images/site/68a844b4b31c9628c316776e_chevron-down.svg");
+  background-image: url("/images/site/68a844b4b31c9628c316776e_chevron-down.svg");
   background-position: 99%;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
 .form_input.is-select-input.is-alternate {
-  background-image: url("/house-of-samuha/images/site/68a844b4b31c9628c316776d_chevron-down-white.svg");
+  background-image: url("/images/site/68a844b4b31c9628c316776d_chevron-down-white.svg");
 }
 
 .form_input.is-alternate {
@@ -3563,7 +3563,7 @@ figcaption {
 }
 
 .rl-styleguide_image-wrapper {
-  background-image: url("/house-of-samuha/images/site/68a844b4b31c9628c316776a_Webflow-Background.svg");
+  background-image: url("/images/site/68a844b4b31c9628c316776a_Webflow-Background.svg");
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: 1080px;
@@ -4119,7 +4119,7 @@ figcaption {
 .bg-base {
   z-index: -1;
   opacity: .5;
-  background-image: url("/house-of-samuha/images/site/68a84a66f2b3e32e594b2f67_image-10.png");
+  background-image: url("/images/site/68a84a66f2b3e32e594b2f67_image-10.png");
   background-position: 0 0;
   background-size: cover;
   width: 100vw;

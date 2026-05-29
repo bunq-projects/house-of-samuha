@@ -22,7 +22,7 @@ function isCurrent(href: string) {
         {links.map(link => {
           if (link.isLogo) {
             return (
-              <a href={link.href} class="navbar1_link margin-horizontal margin-small w-nav-brand">
+              <a href={link.href} class="navbar1_link margin-horizontal margin-small w-nav-brand" data-astro-reload onclick="sessionStorage.removeItem('loaderShown')">
                 <img loading="lazy" src={`${base}images/site/68a84adb6166decf1cfcc2ed_logo.svg`} alt="House of Samuha" class="navbar1_logo" />
               </a>
             );

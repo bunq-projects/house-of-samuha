@@ -1,4 +1,12 @@
 document.addEventListener('astro:page-load', () => {
+  if (sessionStorage.getItem('loaderShown')) {
+    const loader = document.getElementById('loader-wrapper');
+    if (loader) loader.style.display = 'none';
+    return;
+  }
+
+  sessionStorage.setItem('loaderShown', 'true');
+
   const loader = document.getElementById('loader-wrapper');
   if (!loader) return;
 
@@ -14,7 +22,6 @@ document.addEventListener('astro:page-load', () => {
 
   if (video) {
     video.addEventListener('ended', hideLoader);
-    // Fallback if video fails to load or is too long
     setTimeout(hideLoader, 5000);
   } else {
     setTimeout(hideLoader, 2000);

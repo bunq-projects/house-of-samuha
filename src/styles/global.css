@@ -7,6 +7,10 @@
   --color-cream: #cfc8b6;
 }
 
+.bg-persist.bg-hidden {
+  display: none;
+}
+
 .faq3_question {
   cursor: pointer;
 }
@@ -33,7 +37,7 @@
 .w-checkbox-input--inputType-custom:checked {
   background-color: #3898ec;
   border-color: #3898ec;
-  background-image: url("/house-of-samuha/images/site/custom-checkbox-checkmark.589d534424.svg");
+  background-image: url("/images/site/custom-checkbox-checkmark.589d534424.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +45,7 @@
 
 @font-face {
   font-family: "Copperplate Gothic";
-  src: url("/house-of-samuha/fonts/copperplate-gothic-light.ttf") format("truetype");
+  src: url("/fonts/copperplate-gothic-light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
